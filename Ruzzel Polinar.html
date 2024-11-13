@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        /* Cover photo container with video */
+        .cover-photo {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Video styling for cover photo */
+        .cover-photo video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Profile picture styling */
+        .profile-photo {
+            position: absolute;
+            top: 200px; /* Adjust to position the circle outside the cover */
+            left: 40px;
+            border: 5px solid white;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            background-color: #fff;
+            overflow: hidden;
+            z-index: 1; /* Make sure it stays on top */
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Card container */
+        .card {
+            max-width: 900px;
+            margin: auto;
+            margin-top: 120px; /* Adjust for space under profile photo */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            text-align: left;
+        }
+
+        /* Name and title styling */
+        .card h1 {
+            font-size: 32px;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+
+        .title {
+            color: grey;
+            font-size: 20px;
+            margin-left: -20px; 
+            margin-top: 20px;
+        }
+
+        /* About Me and Other Information About Me sections */
+        .section-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: -20px;
+            color: #333;
+            margin-left: -20px; 
+        }
+
+        .section-content {
+            font-size: 18px;
+            margin-left: -20px; 
+            margin-top: -50px;
+            color: #555;
+        }
+
+        /* Button styling */
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Social links */
+        .social-links {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+            margin: 0 12px;
+        }
+
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Cover photo section with video -->
+<div class="cover-photo">
+    <video autoplay loop controls>
+        <source src="https://www.dropbox.com/scl/fi/7l81hqz7zwjnbh2xkw35d/Snowfall-Winter-_-Free-Stock-Footage-_-No-Copyright-videos-_-Royalty-free-drone-shots.mp4?rlkey=xgccjaljh61gh3fz0paeab1hx&raw=1" type="video/mp4">
+    </video>
+</div>
+
+<!-- Profile picture outside of cover photo -->
+<div class="profile-photo">
+    <img src="https://www.dropbox.com/scl/fi/ofar0um2we8fr5jtehog4/IMG_112024.jpg?rlkey=f3z30num5q0pa38lkugviv3tu&raw=1" alt="Profile Image">
+</div>
+
+<!-- Card with information and social links -->
+<div class="card">
+    <h1>Ruzzel Polinar</h1>
+    <p class="title">GRADE 11 - ICT STUDENT</p>
+
+    <!-- About Me Section -->
+    <p class="section-content">Hello I am Ruzzel Polinar, I'm Grade 11 ICT Student. I am willing to learn some things, and I love the anime called Dragon Ball Z.
+</p>
+
+    <!-- Other Information About Me Section -->
+    <h2 class="section-title">Other Information About Me</h2>
+    <ul class="section-content" style="list-style-type: none; padding: 0;">
+        <li> Full Name: Ruzzel Amora Polinar</li>
+        <li> Hobbies: Listening to music</li>
+        <li> City : Antipolo City</li>
+        <li> Country : Philippines</li>
+        <li> School : Antipolo City Senior High School</li>
+    </ul>
+
+    <!-- Social links -->
+    <div class="social-links">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    
+    <!-- Contact button at the bottom -->
+    <button>Contact</button>
+</div>
+
+</body>
+</html>
